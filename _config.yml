@@ -20,7 +20,7 @@ timezone:
 
 title: mearyne # the main title
 
-tagline: mearyne's wiki # it will display as the sub-title
+tagline: mearyne의 wiki # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -29,7 +29,7 @@ description: >- # used by seo meta and the atom feed
 url: ""
 
 github:
-  username: mearyne # change to your github username
+  username: github_username # change to your github username
 
 twitter:
   username: twitter_username # change to your twitter username
