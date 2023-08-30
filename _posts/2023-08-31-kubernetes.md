@@ -6,7 +6,7 @@ tags: [msa, kubernetes, devops]
 ---
 
 
-[docker desktop을 사용하여 kubernetes를 사용해보자](https://mydailylogs.tistory.com/120)
+[docker desktop을 사용하여 kubernetes를 사용해보자](https://mydailylogs.tistory.com/120)  
 kubectl 명령어를 사용해서 Api-Server로 명령(command)을 내린다
 
 # dashboard 설치
@@ -24,14 +24,12 @@ docker에 이미지 push
 
 
 # 참고 사이트
-1. 쿠버네티스 쉽게 이해하기
-   [쿠버네티스 쉽게 이해하기](https://happycloud-lee.tistory.com/246)
-   쿠버네티스를 설치, 배포, 개념, 서비스 로드 밸런서 인그레스, 헬스 체크, 인증, 인가, 무중단배포 .... 수많은 개념들을 다양하고 자세하기 설명하고 있다.
-   한마디로 끝판왕이라 볼 수 있다.
-   하지만 간단한 배포의 내용을 알고 싶을때는 적합하지 않을 수 있다. 그리고 어려운 용어가 많기 때문에 익히는데 수고가 더 생길 수 있다.
+1. [쿠버네티스 쉽게 이해하기](https://happycloud-lee.tistory.com/246)  
+   쿠버네티스를 설치, 배포, 개념, 서비스 로드 밸런서 인그레스, 헬스 체크, 인증, 인가, 무중단배포 .... 수많은 개념들을 다양하고 자세하기 설명하고 있다.  
+   한마디로 끝판왕이라 볼 수 있다.  
+   하지만 간단한 배포의 내용을 알고 싶을때는 적합하지 않을 수 있다. 그리고 어려운 용어가 많기 때문에 익히는데 수고가 더 생길 수 있다.  
 
 
-2. 쿠버네티스 샘플 프로젝트 배포하기
-   [쿠버네티스-샘플-프로젝트-배포하기](https://velog.io/@mertyn88/쿠버네티스-샘플-프로젝트-배포하기)
+2. [쿠버네티스-샘플-프로젝트-배포하기](https://velog.io/@mertyn88/쿠버네티스-샘플-프로젝트-배포하기)  
    간단하고 심플하게 docker 설치, docker-desktop을 이용한 kubernetes 설치, dashboard 설치 및 접근 방법 소개, 배포까지 설명이 되어있다.
 > 아직 안봐서 잘 모른다.
