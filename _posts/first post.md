@@ -1,7 +1,7 @@
 ---
 title: First Post
 date: 2023-08-31 00:30:00 +0900
-categories: [Test]
+categories: [test]
 tags: [test]     # TAG names should always be lowercase
 ---
 
