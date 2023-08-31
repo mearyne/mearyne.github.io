@@ -38,5 +38,4 @@ docker에 이미지 push
 docker desktop 설치, kubernetes 설치, dashboard 설치, k9s 설치 과정을 보여준다.  
 그 이후의 것은 없다.  
 > `k9s`는 kubectl 대신 kubenetes를 더욱 쉽게 관리하도록 도와주는 툴
-{: .prompt-info }
-> ![k9s](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/52985409250000.png =400x)
+> ![k9s](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/52985409250000.png)
