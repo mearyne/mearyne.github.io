@@ -6,7 +6,7 @@ tags: [msa, kubernetes, devops]
 Toc: true
 ---
 
-
+# kubernetes 구조
 kubectl 명령어를 사용해서 Api-Server로 명령(command)을 내린다
 
 # dashboard 설치
@@ -18,9 +18,25 @@ CLI만을 이용하는 것이 아닌 GUI를 활용해서 Kubernetes를 사용해
 
 
 # 배포하기
-dockerfile을 이용하여 이미지 만들기
-docker에 이미지 push
-쿠버네티스 배포파일(deployment.yaml) 생성
+참고사이트 2번 내용을 정리함.
+
+1. dockerfile을 이용하여 이미지 만들기
+2. docker hub에 이미지 push
+3. 쿠버네티스 배포파일(deployment.yaml) 생성 후 적용
+```
+ kubectl apply -f deployment.yaml
+```
+4. get all 명령어로 업로드 됐는지 확인
+```
+ kubectl get all
+```
+5. 외부(localhost로 접속할 수 있게) http 포트포워딩
+```
+ kubectl port-forward svc/yaml에서설정한서비스이름 접근할포트/해상서비스내부포트
+```
+
+> 굳이 kubernetes로 배포하는데 docker-hub로 올릴 필요가 있을까?
+{: .propmt-danger}
 
 
 # 참고 사이트
