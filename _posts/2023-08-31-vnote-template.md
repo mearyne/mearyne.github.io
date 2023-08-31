@@ -5,7 +5,7 @@ categories: [VNote, templates]
 tags: [VNote, templates]     
 ---
 
-# template 양식
+## template 양식
 ```
 ---
 title: %no%
