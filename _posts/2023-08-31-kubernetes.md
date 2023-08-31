@@ -16,6 +16,8 @@ CLI만을 이용하는 것이 아닌 GUI를 활용해서 Kubernetes를 사용해
 - http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login 해당 경로로 dashboard 접속
 - 로그인을 위해서 계정 생성 -> 권한 설정 -> 토큰 발급 후 dashboard에 로그인하기
 
+> 첫 접근에는 문제없이 가능하다. 하지만 재부팅 후 다음 토큰 발급부터 아이디?를 찾지 못하는 오류 발생
+{: .propmt-danger}
 
 # 배포하기
 참고사이트 2번 내용을 정리함.
