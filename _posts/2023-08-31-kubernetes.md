@@ -6,10 +6,34 @@ tags: [msa, kubernetes, devops]
 toc: true
 ---
 
-# kubernetes 구조
+# 개념
+## kubernetes 구조
 kubectl 명령어를 사용해서 Api-Server로 명령(command)을 내린다
 
-# dashboard 설치
+
+## yaml 구조
+- apiVersion : yaml 스크립트를 실행하기 위한 쿠버네티스 API 버전
+- kind : 리소스의 종류(POD, Service, ReplicaSet, Deployment)
+- metadata : 리소스의 라벨, 이름 등을 지정
+    - creationTimestamp
+    - labels
+    - name
+    - etc
+ 
+
+- specification : spec으로 적기도 한다. 각 컴포넌트에 대한 상세 설명. 어떤 오브젝트 종류인지에 따라 다른 내용이 담김.
+    - replicas
+    - selector
+    - strategy
+    - template
+    - etc
+    
+
+- status : 쿠버네티스가 자동으로 생성. 자신이 원하는 상태가 되도록 현재 상태를 기술.
+
+
+# 실습
+## dashboard 설치
 CLI만을 이용하는 것이 아닌 GUI를 활용해서 Kubernetes를 사용해보자.
 - 공식 사이트에서 제공하는 yaml을 이용해 dashboard 설치
 - kubectl proxy를 사용해 dashboard 활성화
@@ -19,7 +43,7 @@ CLI만을 이용하는 것이 아닌 GUI를 활용해서 Kubernetes를 사용해
 > 첫 접근에는 문제없이 가능하다. 하지만 재부팅 후 다음 토큰 발급부터 아이디?를 찾지 못하는 오류 발생
 {: .prompt-danger }
 
-# 배포하기
+## 배포하기
 참고사이트 2번 내용을 정리함.
 
 1. dockerfile을 이용하여 이미지 만들기
@@ -60,3 +84,7 @@ docker desktop 설치, kubernetes 설치, dashboard 설치, k9s 설치 과정을
 {: .prompt-info }
 
 ![k9s](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/52985409250000.png){: height="400px"}
+
+4. [쿠버네티스 yaml configuration 파일](https://yoonchang.tistory.com/46)
+
+5. [쿠버네티스 apiVersion, kind 설명](https://blog.voidmainvoid.net/138)
