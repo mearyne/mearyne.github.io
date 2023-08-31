@@ -3,10 +3,10 @@ title: kubernetes 개념 공부
 date: 2023-08-31 00:30:00 +0900
 categories: [MSA, kubernetes]
 tags: [msa, kubernetes, devops]     
+Toc: true
 ---
 
 
-[docker desktop을 사용하여 kubernetes를 사용해보자](https://mydailylogs.tistory.com/120)  
 kubectl 명령어를 사용해서 Api-Server로 명령(command)을 내린다
 
 # dashboard 설치
@@ -32,4 +32,11 @@ docker에 이미지 push
 
 2. [쿠버네티스-샘플-프로젝트-배포하기](https://velog.io/@mertyn88/쿠버네티스-샘플-프로젝트-배포하기)  
    간단하고 심플하게 docker 설치, docker-desktop을 이용한 kubernetes 설치, dashboard 설치 및 접근 방법 소개, 배포까지 설명이 되어있다.
-> 아직 안봐서 잘 모른다.
+
+
+3. [docker desktop을 사용하여 kubernetes를 사용해보자](https://mydailylogs.tistory.com/120)  
+docker desktop 설치, kubernetes 설치, dashboard 설치, k9s 설치 과정을 보여준다.  
+그 이후의 것은 없다.  
+> `k9s`는 kubectl 대신 kubenetes를 더욱 쉽게 관리하도록 도와주는 툴
+> ![k9s](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/52985409250000.png =400x)
+{: .prompt-info }
