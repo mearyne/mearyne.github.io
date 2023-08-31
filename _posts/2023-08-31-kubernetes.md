@@ -47,7 +47,34 @@ Rolling Update라고 부른다.
 3. 대체 완료
 
 
+### 설치 종류
+#### 직접 k8s 설치
+
+
+#### 클라우드 이용
+퍼블릭 클라우드 서비스 제공 업체들은 쿠버네티스를 PaaS 형식의 서비스로 출시했다.  
+AKS(Azure Kubernetes Service), EKS(Elastic Kuberentes Service), GKE(Google Kubernetes Engine) 세가지가 존재한다.  
+
+
+### k8s 간단한 명령어
+```
+kubectl cluster-info # 클러스터 구성 정보 확인
+kubectl config view # 클러스터 정보 자세히 확인
+kubectl get nodes # 노드 정보 확인
+kind delete cluster --name "이름" # 클러스터 삭제
+
+```
+
 ## 실습
+### docker desktop을 사용하여 kubernetes 설치하기
+docker desktop 설정 > kubernetes > Enable Kubernetes > Apply & restart  
+docker 안에 설치되며 docker desktop이 종료되면 kubernetes도 같이 종료된다.  
+kind(kubernetes IN Docker)라고도 부른다.  
+
+> 학습 용도로는 적합하나 실제 기업 환경에서는 kubeadm을 많이 사용한다.  
+{: .prompt-info }
+
+
 ### dashboard 설치
 CLI만을 이용하는 것이 아닌 GUI를 활용해서 Kubernetes를 사용해보자.
 - 공식 사이트에서 제공하는 yaml을 이용해 dashboard 설치
@@ -100,14 +127,14 @@ docker desktop 설치, kubernetes 설치, dashboard 설치, k9s 설치 과정을
 
 ![k9s](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/52985409250000.png){: height="400px"}
 
-4. [쿠버네티스 yaml configuration 파일](https://yoonchang.tistory.com/46)
+4. [쿠버네티스 yaml configuration 파일](https://yoonchang.tistory.com/46)  
 
 
-5. [쿠버네티스 apiVersion, kind 설명](https://blog.voidmainvoid.net/138)
+5. [쿠버네티스 apiVersion, kind 설명](https://blog.voidmainvoid.net/138)  
 apiVersion 종류와 kind 종류에 대해서 설명이 되어있다.
 
-6. [kubenetes docs](https://kubernetes.io/docs/concepts/overview/components/)
+6. [kubenetes docs](https://kubernetes.io/docs/concepts/overview/components/)  
 쿠버네티스 공식 문서 사이트.  
 
-7. [kubernetes Rolling Update](https://gomgomshrimp.oopy.io/posts/9)
+7. [kubernetes Rolling Update](https://gomgomshrimp.oopy.io/posts/9)  
 쿠버네티스에서 Rolling Update의 개념과 실제 어떻게 적용하는지(yaml)에 대한 설명이 적혀있다.
