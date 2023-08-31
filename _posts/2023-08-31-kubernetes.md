@@ -3,7 +3,7 @@ title: kubernetes 개념 공부
 date: 2023-08-31 00:30:00 +0900
 categories: [MSA, kubernetes]
 tags: [msa, kubernetes, devops]     
-Toc: true
+toc: true
 ---
 
 # kubernetes 구조
