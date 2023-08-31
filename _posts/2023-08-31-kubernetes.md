@@ -7,7 +7,17 @@ toc: true
 ---
 
 ## 개념
-### kubernetes 구조
+
+### 용어
+- namespace : 쿠버네티스 오브젝트를 묶는 하나의 그룹
+- pod : k8s 컨테이너가 실행되는 최소 단위
+- service : pod에 고정된 주소로 접근할 수 있게 하는 역할. k8s 안의 다양한 애플리케이션간 통신이 필요한 경우 service를 오픈하여 외부에 접근할 수 있도록 하거나, 다른 애플리케이션간 통신에 활용할 수 있다  
+- ingress : 클러스터 외부에서 내부 pod로 접근할때 
+
+
+### 구조
+![kubernetes_structure](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/69335412260189.png)
+
 kubectl 명령어를 사용해서 Api-Server로 명령(command)을 내린다
 
 
@@ -15,21 +25,26 @@ kubectl 명령어를 사용해서 Api-Server로 명령(command)을 내린다
 - apiVersion : yaml 스크립트를 실행하기 위한 쿠버네티스 API 버전
 - kind : 리소스의 종류(POD, Service, ReplicaSet, Deployment)
 - metadata : 리소스의 라벨, 이름 등을 지정
+    - labels : 특정 k8s object만 나열하거나 검색할 때 유용하게 쓰이는 key-value쌍
+    - name : namespace 상에서 유일한 값
     - creationTimestamp
-    - labels
-    - name
     - etc
- 
-
 - specification : spec으로 적기도 한다. 각 컴포넌트에 대한 상세 설명. 어떤 오브젝트 종류인지에 따라 다른 내용이 담김.
     - replicas
     - selector
     - strategy
     - template
     - etc
-    
-
 - status : 쿠버네티스가 자동으로 생성. 자신이 원하는 상태가 되도록 현재 상태를 기술.
+
+
+### 무중단 업데이트 방법
+![kubernetes 업데이트 방법](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/398215612257793.png)
+Rolling Update라고 부른다.  
+1. 새로운 버전의 Pod가 생성된다
+2. 정상적으로 작동됨을 확인하면 이전 버전의 Pod를 하나씩 종료한다.
+(사용자 요청을 처리중이라면 일정 시간 대기 후 제거된다_Graceful shutdown)
+3. 대체 완료
 
 
 ## 실습
@@ -87,4 +102,12 @@ docker desktop 설치, kubernetes 설치, dashboard 설치, k9s 설치 과정을
 
 4. [쿠버네티스 yaml configuration 파일](https://yoonchang.tistory.com/46)
 
+
 5. [쿠버네티스 apiVersion, kind 설명](https://blog.voidmainvoid.net/138)
+apiVersion 종류와 kind 종류에 대해서 설명이 되어있다.
+
+6. [kubenetes docs](https://kubernetes.io/docs/concepts/overview/components/)
+쿠버네티스 공식 문서 사이트.  
+
+7. [kubernetes Rolling Update](https://gomgomshrimp.oopy.io/posts/9)
+쿠버네티스에서 Rolling Update의 개념과 실제 어떻게 적용하는지(yaml)에 대한 설명이 적혀있다.
