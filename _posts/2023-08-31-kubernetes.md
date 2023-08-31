@@ -100,14 +100,14 @@ docker desktop 설치, kubernetes 설치, dashboard 설치, k9s 설치 과정을
 
 ![k9s](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/52985409250000.png){: height="400px"}
 
-4. [쿠버네티스 yaml configuration 파일](https://yoonchang.tistory.com/46)
+4. [쿠버네티스 yaml configuration 파일](https://yoonchang.tistory.com/46)  
 
 
-5. [쿠버네티스 apiVersion, kind 설명](https://blog.voidmainvoid.net/138)
+5. [쿠버네티스 apiVersion, kind 설명](https://blog.voidmainvoid.net/138)  
 apiVersion 종류와 kind 종류에 대해서 설명이 되어있다.
 
-6. [kubenetes docs](https://kubernetes.io/docs/concepts/overview/components/)
+6. [kubenetes docs](https://kubernetes.io/docs/concepts/overview/components/)  
 쿠버네티스 공식 문서 사이트.  
 
-7. [kubernetes Rolling Update](https://gomgomshrimp.oopy.io/posts/9)
+7. [kubernetes Rolling Update](https://gomgomshrimp.oopy.io/posts/9)  
 쿠버네티스에서 Rolling Update의 개념과 실제 어떻게 적용하는지(yaml)에 대한 설명이 적혀있다.
