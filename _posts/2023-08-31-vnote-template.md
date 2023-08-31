@@ -1,5 +1,5 @@
 ---
-title: 2023-08-31-vnote-template
+title: vnote template
 date: 2023-08-31 09:39:29 +0900
 categories: [VNote, templates]
 tags: [VNote, templates]     
