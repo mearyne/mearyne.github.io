@@ -20,3 +20,7 @@ package-lock.json
 
 # Misc
 assets/js/dist
+
+/_posts/vx_notebook
+/_posts/vx.json
+/_posts/vx_recycle_bin
