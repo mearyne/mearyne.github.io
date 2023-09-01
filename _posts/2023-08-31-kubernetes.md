@@ -104,7 +104,7 @@ CLI만을 이용하는 것이 아닌 GUI를 활용해서 Kubernetes를 사용해
 ```
 5. 외부(localhost로 접속할 수 있게) http 포트포워딩
 ```
- kubectl port-forward svc/yaml에서설정한서비스이름 접근할포트/해상서비스내부포트
+ kubectl port-forward {svc/yaml에서설정한서비스이름} {접근할포트}:{해상서비스내부포트}
 ```
 
 > 굳이 kubernetes로 배포하는데 docker-hub로 올릴 필요가 있을까?
@@ -130,6 +130,7 @@ docker desktop 설치, kubernetes 설치, dashboard 설치, k9s 설치 과정을
 {: .prompt-info }
 
 ![k9s](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/52985409250000.png){: height="400px"}
+
 
 4. [쿠버네티스 yaml configuration 파일](https://yoonchang.tistory.com/46)  
 
