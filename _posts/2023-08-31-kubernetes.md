@@ -42,13 +42,27 @@ kubectl 명령어를 사용해서 Api-Server로 명령(command)을 내린다
 - status : 쿠버네티스가 자동으로 생성. 자신이 원하는 상태가 되도록 현재 상태를 기술.
 
 
-### 무중단 업데이트 방법
+### 무중단 업데이트 원리
 ![kubernetes 업데이트 방법](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/398215612257793.png)
 Rolling Update라고 부른다.  
 1. 새로운 버전의 Pod가 생성된다
 2. 정상적으로 작동됨을 확인하면 이전 버전의 Pod를 하나씩 종료한다.
 (사용자 요청을 처리중이라면 일정 시간 대기 후 제거된다_Graceful shutdown)
 3. 대체 완료
+
+
+### 명령어
+#### 쿠버네티스 정상 구동 확인
+```
+> kubectl cluster-info
+Kubernetes master is running at https://kubernetes.docker.internal:6443
+KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+```
+
+#### 쿠버네티스 정보 확인하기
+```
+> kubectl get all
+```
 
 
 ### 설치 종류
