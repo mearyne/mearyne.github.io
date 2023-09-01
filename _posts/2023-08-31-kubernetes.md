@@ -14,6 +14,10 @@ toc: true
 - service : pod에 고정된 주소로 접근할 수 있게 하는 역할. k8s 안의 다양한 애플리케이션간 통신이 필요한 경우 service를 오픈하여 외부에 접근할 수 있도록 하거나, 다른 애플리케이션간 통신에 활용할 수 있다  
 - ingress : 클러스터 외부에서 내부 pod로 접근할때 
 
+> pod는 여러개의 컨테이너를 가질 수 있다. pod의 컨테이너는 서로 엮여있는 것들을 같이 배포할때 사용한다.  
+> 상품service와 상품db를 같은 pod로 엮어서 배포하는 식으로 구현한다.  
+{: .prompt-info }
+
 
 ### 구조
 ![kubernetes_structure](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/69335412260189.png)
