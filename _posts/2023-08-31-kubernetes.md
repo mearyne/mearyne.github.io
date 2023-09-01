@@ -112,17 +112,17 @@ CLI만을 이용하는 것이 아닌 GUI를 활용해서 Kubernetes를 사용해
 
 
 ## 참고 사이트
-1. [쿠버네티스 쉽게 이해하기](https://happycloud-lee.tistory.com/246)  
+- [쿠버네티스 쉽게 이해하기](https://happycloud-lee.tistory.com/246)  
    쿠버네티스를 설치, 배포, 개념, 서비스 로드 밸런서 인그레스, 헬스 체크, 인증, 인가, 무중단배포 .... 수많은 개념들을 다양하고 자세하기 설명하고 있다.  
    한마디로 끝판왕이라 볼 수 있다.  
    하지만 간단한 배포의 내용을 알고 싶을때는 적합하지 않을 수 있다. 그리고 어려운 용어가 많기 때문에 익히는데 수고가 더 생길 수 있다.  
 
 
-2. [쿠버네티스-샘플-프로젝트-배포하기](https://velog.io/@mertyn88/쿠버네티스-샘플-프로젝트-배포하기)  
+- [쿠버네티스-샘플-프로젝트-배포하기](https://velog.io/@mertyn88/쿠버네티스-샘플-프로젝트-배포하기)  
    간단하고 심플하게 docker 설치, docker-desktop을 이용한 kubernetes 설치, dashboard 설치 및 접근 방법 소개, 배포까지 설명이 되어있다.
 
 
-3. [docker desktop을 사용하여 kubernetes를 사용해보자](https://mydailylogs.tistory.com/120)  
+- [docker desktop을 사용하여 kubernetes를 사용해보자](https://mydailylogs.tistory.com/120)  
 docker desktop 설치, kubernetes 설치, dashboard 설치, k9s 설치 과정을 보여준다.  
 그 이후의 것은 없다.  
 
@@ -132,14 +132,14 @@ docker desktop 설치, kubernetes 설치, dashboard 설치, k9s 설치 과정을
 ![k9s](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-08-31-kubernetes.md/52985409250000.png){: height="400px"}
 
 
-4. [쿠버네티스 yaml configuration 파일](https://yoonchang.tistory.com/46)  
+- [쿠버네티스 yaml configuration 파일](https://yoonchang.tistory.com/46)  
 
 
-5. [쿠버네티스 apiVersion, kind 설명](https://blog.voidmainvoid.net/138)  
+- [쿠버네티스 apiVersion, kind 설명](https://blog.voidmainvoid.net/138)  
 apiVersion 종류와 kind 종류에 대해서 설명이 되어있다.
 
-6. [kubenetes docs](https://kubernetes.io/docs/concepts/overview/components/)  
+- [kubenetes docs](https://kubernetes.io/docs/concepts/overview/components/)  
 쿠버네티스 공식 문서 사이트.  
 
-7. [kubernetes Rolling Update](https://gomgomshrimp.oopy.io/posts/9)  
+- [kubernetes Rolling Update](https://gomgomshrimp.oopy.io/posts/9)  
 쿠버네티스에서 Rolling Update의 개념과 실제 어떻게 적용하는지(yaml)에 대한 설명이 적혀있다.
