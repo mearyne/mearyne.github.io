@@ -7,11 +7,11 @@ tags: [kubernetes, msa, docker-compose, docker-desktop, 관리형쿠버네티스
 
 
 ## 1. 주요 개념
-도커 (Docker) : 코드를 이미지화(컨테이너화) 시켜서 실행하는 툴
-쿠버네티스 (Kubernetes) : 컨테이너화된 이미지들을 관리하는 툴
-docker-compose : 이미지들을 일괄적으로 실행해줌
-관리형 쿠버네티스 (Managed Kubernetes) : 쿠버네티스를 관리해주는 툴
-Docker Desktop : 애플리케이션을 쉽게 생성, 개발 및 테스트할 수 있는 툴
+도커 (Docker) : 코드를 이미지화(컨테이너화) 시켜서 실행하는 툴  
+쿠버네티스 (Kubernetes) : 컨테이너화된 이미지들을 관리하는 툴  
+docker-compose : 이미지들을 일괄적으로 실행해줌  
+관리형 쿠버네티스 (Managed Kubernetes) : 쿠버네티스를 관리해주는 툴  
+Docker Desktop : 애플리케이션을 쉽게 생성, 개발 및 테스트할 수 있는 툴  
 
 ### docker란?
 
