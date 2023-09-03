@@ -150,8 +150,6 @@ VMware Tanzu를 통한 애플리케이션 현대화.
 기업에서 Kubernetes 기반으로 최신 애플리케이션을 구축하고 운영, 관리할 수 있도록 애플리케이션을 현대화해주는 최적의 솔루션이다.
 
 
-참고 : https://themapisto.tistory.com/181
-참고 : https://www.iroo.co.kr/?page_id=5854
 
 
 - 코드를 통한 OS 및 인프라 설치를 통한 IAC 표준화 가능
@@ -221,6 +219,5 @@ MSA에서의 문제는 다음과 같다.
 
 ## 참고 사이트
 
-1. [왜 매니지드 쿠버네티스인가요?](https://www.cloocus.com/insight-kubernetes_2/)  
-2. [그림과 실습으로 배우는 도커 & 쿠버네티스](https://www.yes24.com/Product/Goods/108431011)
-
+1. [왜 매니지드 쿠버네티스인가요?](https://www.cloocus.com/insight-kubernetes_2/)    
+2. [그림과 실습으로 배우는 도커 & 쿠버네티스](https://www.yes24.com/Product/Goods/108431011)  
