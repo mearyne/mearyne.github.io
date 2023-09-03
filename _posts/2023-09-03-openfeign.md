@@ -14,8 +14,15 @@ Netfilx에 의해 만들어진 선언적인(Declearative) HTTP Client 도구로�
 2. 익숙한 MVC 어노테이션으로 익숙함
 3. 다른 Spring Cloud 기술들(Eureka, Circuit Breaker, LoadBalancer) 과의 통합이 쉬움
 
-### RestTemplate보다 좋은 점은?
-restTemplate를 사용하기 위해서는 선언해야 하는 것들이 많다.  
+### restTemplate을 버리고 갈아타야하는가?
+솔직히 잘 쓰고있는 restTemplate를 버리고 갈아탈 만큼의 매리트가 있어 보이지는 않는다.  
+나름의 장단점이 존재하고, 각각의 단점들을 상쇄시킬 수 있다고 본다.  
+선택의 문제이지 어느게 상위호환이다 그런 느낌은 못받았다.  
+
+### 나는 왜 openfeign을 알아봤는가?
+자그마한 미니서비스를 구축하는 과정에서 에러 제어를 위해서 hystrix를 적용하고 있었다.  
+지금 시점(2023-08)에선 hystrix보다는 resilience4j를 권장했고, 도전했으나 계속된 실패로 openfeign을 이용하여 제어하는 법을 알아봤다.  
+
 
 
 
