@@ -1,8 +1,8 @@
 ---
 title: openfeign 
 date: 2023-09-03 17:58:43 +0900
-categories: []
-tags: []     
+categories: [MSA, openfeign]
+tags: [msa, openfeign, resilience4j, restTemplate, 회복성패턴]     
 ---
 
 ## openfeign이란?
