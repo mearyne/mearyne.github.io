@@ -152,4 +152,4 @@ MSA에서의 문제는 다음과 같다.
 - Kubernetes는 개발자가 아닌 DevOps 중심의 플랫폼이다.
 - 비교적 새로운 플랫폼(2년차), 빠르게 많은 것들이 변함
 
-![springcloud and kubernetes strength and weakness](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-09-01-kubernetes-seminar.md/342133615257863.png)
+# ![springcloud and kubernetes strength and weakness](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-09-01-kubernetes-seminar.md/342133615257863.png)
