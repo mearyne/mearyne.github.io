@@ -5,6 +5,14 @@ categories: [MSA, Kubernetes]
 tags: [msa, kubernetes, gks, aks, eks]     
 ---
 
+## 결론
+
+|     | AKS | GKS | EKS |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+
 ## AKS 가격
 
 ![aks-price](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-09-05-managed-kubernetes-cost-difference.md/252981910254186.png)
