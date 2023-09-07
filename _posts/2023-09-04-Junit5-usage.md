@@ -17,8 +17,27 @@ tags: [spring, junit5, java, yet]
 - h2
 - multi modules
 
+## 종류
+```java
+assertEquals(excpected, actual)
+assertNotNull(actual)
+assertTrue(boolean)
+assertAll(excutables...) // 모든 확인 구문 확인
+assertThrows(expectedType, excutable) // 예외 발생 확인
+assertTimeout(duration, executable) // 특정 시간 안에 실행이 완료되는지 확인
+```
 
 ## 사용법
+### assert() 안의 supplier는 람다로 표현하기!
+
+```
+assertEquals(StudyStatus.DRAFT, study.getStatus(), () -> "스터디를 처음 만들면" + StudyStatus.DRAFT + "상태다.");
+assertEquals(StudyStatus.DRAFT, study.getStatus(), "스터디를 처음 만들면" + StudyStatus.DRAFT + "상태다.");
+```
+위와 아래의 코드는 서로 동일하지 않을때, 메시지를 띄우도록 하는 코드이다.  
+하지만 아래의 코드는 성공을 해도 연산을 진행하는 반면에, 위의 코드는 실패했을 때만 연산한다.  
+따라서 위의 방식대로 작성하는 것이 더 효율적이다.  
+
 
 
 ## 문제점
