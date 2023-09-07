@@ -73,7 +73,7 @@ properties 설정에서 zuul과 ribbon만 쓰이기에 당연히 ribbon 라이�
 
 
 
-## 겪은 error
+## error
 ### RequestRejectedException error
 ```
 The requestURI was rejected because it can only contain only printable ASCII characters
