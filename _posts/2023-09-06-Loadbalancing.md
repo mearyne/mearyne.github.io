@@ -32,17 +32,17 @@ springboot 2.4.x 이상부터 Zuul, Ribbon을 사용할 수 없다.
 
 
 ### Zuul에서 로드밸런싱 확인
-User - Zuul - API1(application name = ribbon-api)  
-                - API2(application name = ribbon-api)  
+![zuul-loadbalancing](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-09-06-loadbalancing.md/402550015250076.png)
+
 이렇게 구성이 되있다고 가정하자.  
-이때 유저는 Zuul에게 통신을 쏜다. 유저는 API1, API2의 주소를 알 수 없고 (Zuul의 리버스 프록시 때문에) Zuul은 Eureka로부터 받아온 주소를 사용해서 통신을 전달하게 된다.  
-API1, API2 둘의 어플리케이션 이름은 ribbon-api로 동일하기에, API1에서 통신을 했다면 다음 단계에서는 API2에서 통신하게 된다.  
+이때 유저는 Zuul에게 통신을 쏜다. 유저는 Service1, Service1'의 주소를 알 수 없고 (Zuul의 리버스 프록시 때문에) Zuul은 Eureka로부터 받아온 주소를 사용해서 통신을 전달하게 된다.  
+Service1, Service1' 둘의 어플리케이션 이름은 ribbon-api로 동일하기에, Service1에서 통신을 했다면 다음 단계에서는 Service1'에서 통신하게 된다(그 다음에는 Service1''로 간다).
 
 ![error in 14100](https://raw.githubusercontent.com/mearyne/mdImgHost/master/_posts/2023-09-06-loadbalancing.md/103034510249374.png)
 
-처음은 API1에 오류가 뜨는걸 확인했다.  
-다시 postman으로 쏜다면 오류가 발생한 API1이 아닌 API2로 전달된다.  
-Ribbon은 디폴트로 Round Robbin 방식을 체택하기 때문에 오류발생여부와는 상관없이 API2로 전달한다(성공하든 실패하든 다음 통신은 API2이다).  
+처음은 Service1에 오류가 뜨는걸 확인했다.  
+다시 postman으로 쏜다면 오류가 발생한 Service1이 아닌 Service1'로 전달된다.  
+Ribbon은 디폴트로 Round Robbin 방식을 체택하기 때문에 오류발생여부와는 상관없이 Service1'로 전달한다
 
 
 
