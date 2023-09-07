@@ -1,7 +1,7 @@
 ---
 title: GKE, AKS, EKS 가격비교
 date: 2023-09-05 10:18:10 +0900
-categories: [MSA, Kubernetes]
+categories: [MSA, kubernetes]
 tags: [msa, kubernetes, gks, aks, eks]     
 ---
 
