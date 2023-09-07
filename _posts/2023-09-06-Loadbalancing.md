@@ -49,10 +49,10 @@ Ribbon은 디폴트로 Round Robbin 방식을 체택하기 때문에 오류발�
 ### Zuul에서 retry 확인
 spring-retry 라이브러리를 설치해야한다.  
 ```xml
-	<dependency>
-			 <groupId>org.springframework.retry</groupId>
-			 <artifactId>spring-retry</artifactId>
-	</dependency>
+<dependency>
+	<groupId>org.springframework.retry</groupId>
+	<artifactId>spring-retry</artifactId>
+</dependency>
 ```
 
 ```properties
@@ -73,7 +73,7 @@ properties 설정에서 zuul과 ribbon만 쓰이기에 당연히 ribbon 라이�
 
 
 
-## error
+## 겪은 error
 ### RequestRejectedException error
 ```
 The requestURI was rejected because it can only contain only printable ASCII characters
@@ -99,4 +99,4 @@ ribbon의 개념과 구성요소, 실습에 대해서 설명함.
 
 
 4. [API-재시도를-처리할수-있는-여러가지-방안들](https://velog.io/@garden6/API-재시도를-처리할수-있는-여러가지-방안들)  
-retry를 하는 5가지 방법  
+retry를 하는 5가지 방법. Zuul에 적용하는 방법은 아니다.  
