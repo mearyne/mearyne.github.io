@@ -1,5 +1,5 @@
 ---
-title: Zuul Loadbalancing 실습(작성중)
+title: Zuul Loadbalancing 실습(loadbalancing, retry)
 date: 2023-09-06 13:19:08 +0900
 categories: [MSA, zuul]
 tags: [msa, loadbalancing, ribbon]     
