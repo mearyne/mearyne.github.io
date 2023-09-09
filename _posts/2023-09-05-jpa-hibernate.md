@@ -3,6 +3,7 @@ title: 자바 ORM 표준 프로그래밍 - 기본편(1)
 date: 2023-09-04 19:08:57 +0900
 categories: [java, jpa]
 tags: [spring, java, jpa, jpql]     
+published: false  
 ---
 
 
