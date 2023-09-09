@@ -27,6 +27,21 @@ assertThrows(expectedType, excutable) // 예외 발생 확인
 assertTimeout(duration, executable) // 특정 시간 안에 실행이 완료되는지 확인
 ```
 
+## 사용종류
+### 조건에 따라서 실행여부 결정
+조건에 따라서 테스트를 진행할지를 결정할 수 있다.  
+OS가 MAC인지 WIN인지(@EnabledOS)에 따라서 결정할 수 있고, 자바 버전이 몇버전인지(@EnabledJRE)에 대해서 실행여부를 설정해줄 수 있다.  
+환경변수값이 특정 값(@EnabledIfEnvironmentVariable)일때 작동시키게 할 수 있다.  
+
+### 태깅 및 필터링
+테스트에 태그를 붙여서 원하는대로 작동시키거나 할 수 있다.  
+```
+@Tag("")
+```
+
+
+
+
 ## 사용법
 ### assert() 안의 supplier는 람다로 표현하기!
 
