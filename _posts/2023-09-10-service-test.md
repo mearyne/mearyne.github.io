@@ -12,6 +12,8 @@ tags: [java, spring, junit, mock]
 Intellij의 httpRequest 파일을 잘 이용하면 비슷하게 테스트를 만들 수 있지 않을까 싶었다.  
 그런 생각을 한 이유는 그냥 JUnit을 이용해서 컨트롤러를 테스트 하는 법을 몰랐기 때문이기도 했다.  
 
+> controller의 테스트는 통합테스트이다.
+{: .prompt-info }
 
 
 ## 사용법
@@ -48,6 +50,7 @@ class UserControllerTest extends DummyObject {
 - mvc.perform(메소드 + 주소).컨텐츠(바디값).컨텐츠타입(타입값); : post 통신을 날리는 코드
 - resultActions.andReturn().getResponse().getContentAsString(); : return 값을 확인하고 싶을때 사용한다
 - resultActions.andExpect(status().상태값); : 실제 테스트하는 코드
+- SpringBootTest는 springbean이 등록이 되기 때문에 repository를 autowired로 가져올 수 있다  
 
 
 
