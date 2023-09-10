@@ -22,7 +22,7 @@ tags: [java, spring, security, junit5]
 ```
 @Builder 어노테이션을 붙이자.  
 
-### @ManyToOne(fetch = FetchType.LAZY)
+### ManyToOne(fetch = FetchType.LAZY)
 ```java
     // 항상 ORM에서 fk의 주인은 Many Entity 쪽이다.
     @ManyToOne(fetch = FetchType.LAZY)

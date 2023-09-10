@@ -1,9 +1,17 @@
 ---
-title: ioc 컨테이너에 있는 Bean 리스트 확인하는 법
+title: IoC 컨테이너에 있는 Bean 리스트 확인하는 법
 date: 2023-09-09 09:49:48 +0900
 categories: [java, Spring]
 tags: [ioc, container, bean]     
 ---
+
+## IoC Conatiner란?
+IoC(제어권의 역전)이란, 객체의 생성과 생명주기의 관리까지 모든 객체에 대한 제어권이 역전되었다는 것을 말한다.  
+IoC Container는 객체의 생성을 책임지고 의존성을 관리한다.  
+
+
+
+## 확인하는 법
 
 ```java
 package shop.mtcoding.bank;
