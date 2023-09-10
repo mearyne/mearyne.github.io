@@ -22,22 +22,6 @@ tags: [java, spring, security, junit5]
 ```
 @Builder 어노테이션을 붙이자.  
 
-### ManyToOne(fetch = FetchType.LAZY)
-```java
-    // 항상 ORM에서 fk의 주인은 Many Entity 쪽이다.
-    @ManyToOne(fetch = FetchType.LAZY)
-    private User user; // user_id
-```
-한 명의 유저는 여러 개의 계좌를 얻을 수 있다. 그렇다면 유저와 계좌의 관계는 일대다 관계라 할 수 있다.  
-이를 엔티티 코드로 구현을 하려면 account 테이블 코드에서 위와같이 적으면 된다.  
-많은 쪽에서 ManyToOne을 적으면 된다.  
-이렇게 되면 실제로 작동할때 account.getUser()까지는 LAZY가 작동 안한다.  
-account.getUser().getId() 이렇게 되야지 LAZY가 작동한다.  
-
-
-### @Column
-```java
- 
 ### @ManyToOne(fetch = FetchType.LAZY)
 ```java
     // 항상 ORM에서 fk의 주인은 Many Entity 쪽이다.
@@ -49,6 +33,7 @@ account.getUser().getId() 이렇게 되야지 LAZY가 작동한다.
 많은 쪽에서 ManyToOne을 적으면 된다.  
 이렇게 되면 실제로 작동할때 account.getUser()까지는 LAZY가 작동 안한다.  
 account.getUser().getId() 이렇게 되야지 LAZY가 작동한다.  
+
 
 
 ### @Column
